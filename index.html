@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <title>Portofolio - Zhen</title>
 </head>
 <div class="loader-wrapper">
@@ -243,12 +244,12 @@
     </div>
 
     <script>
-        $(window).on("load",function(){
-          $(".loader-wrapper").fadeOut("slow");
-        });
+        $(document).ready(function(){
+        $(".loader-wrapper").fadeOut();
+        })
     </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </body>
 
 </html>
