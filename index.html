@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portofolio - Zhen</title>
 </head>
-
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
 <body>
-    <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
-    </div>
+    
     
 
     <!-- tampilan full desktop -->
@@ -243,9 +243,9 @@
     </div>
 
     <script>
-        setTimeout(function() {
-        $('.loader-wrapper').hide()
-        }, 3000);
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
     </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
