@@ -244,9 +244,9 @@
     </div>
 
     <script>
-        $(document).ready(function(){
-        $(".loader-wrapper").fadeOut();
-        })
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
     </script>
 
 
